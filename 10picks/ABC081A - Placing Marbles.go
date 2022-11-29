@@ -1,29 +1,36 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
-func main() {
-    var num, a, b, c int
-	fmt.Scanf("%d", &num)
-	fmt.Scanf("%d %d %d", &a, &b, &c)
-	ary := [...]int{*&a,*&b,*&c}
-    num := len(ary)
-    count := 0
-  	for i := 0; i < num; i++ {
-      sum := a + b + c
-      split := sum / 2
-      if spilt % 2 == 0 {
-			count++
-	   }
+func divide(datas []int) []int {
+	for i, data := range datas {
+		if data%2 != 0 {
+			datas[i] = 0
+		} else {
+			datas[i] = data / 2
 		}
-  }
-  fmt.Printf("%d",count)
-
-if sss == 0{
-
-xq
+	}
+	return datas
 }
 
+func main() {
+	var num int
+	fmt.Scan(&num)
+
+	datas := make([]int, 0, num)
+	for i := 0; i < num; i++ {
+		var d int
+		fmt.Scan(&d)
+		datas = append(datas, d)
+	}
+
+	count := 0
+	for {
+		datas = divide(datas)
+		if datas == nil {
+			break
+		}
+		count++
+	}
+	fmt.Println(count)
 }
