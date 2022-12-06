@@ -2,11 +2,10 @@ package main
 
 import (
 	"fmt"
-	"strings"
 )
 
 func main() {
-	var n string
+	var n int
 	fmt.Scan(&n)
-	fmt.Println(strings.Count(n, "1"))
+	fmt.Println((n + 1) / 2)
 }
