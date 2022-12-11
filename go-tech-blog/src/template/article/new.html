@@ -1,6 +1,7 @@
 {% extends "../layout.html" %}
 
 {% block css %}
+<<<<<<< HEAD
 <link rel="stylesheet" href="/css/vendor/prism.css" />
 <link rel="stylesheet" href="/css/article/new.css" />
 <link rel="stylesheet" href="/css/article/_form.css" />
@@ -12,6 +13,12 @@
 <script src="/js/vendor/prism.js"></script>
 <script src="/js/module/parser.js"></script>
 <script src="/js/module/form.js"></script>
+=======
+<link rel="stylesheet" href="/css/article/new.css" />
+{% endblock %}
+
+{% block js %}
+>>>>>>> go-tech-blog/main
 <script src="/js/article/new.js"></script>
 {% endblock %}
 
@@ -20,6 +27,7 @@
 {% endblock %}
 
 {% block content %}
+<<<<<<< HEAD
 <div class="l-col l-row l-v-padd">
   <div class="article-new l-row">
     <div class="article-new__form l-row">
@@ -27,4 +35,8 @@
     </div>
   </div>
 </div>
+=======
+<p>{{ Message }}</p>
+<p>{{ Now }}</p>
+>>>>>>> go-tech-blog/main
 {% endblock %}

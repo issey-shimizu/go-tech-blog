@@ -1,6 +1,7 @@
 {% extends "../layout.html" %}
 
 {% block css %}
+<<<<<<< HEAD
 <link rel="stylesheet" href="/css/vendor/prism.css" />
 <link rel="stylesheet" href="/css/article/show.css" />
 <link rel="stylesheet" href="/css/article/_article.css" />
@@ -10,10 +11,17 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/2.0.0/remarkable.min.js"></script>
 <script src="/js/vendor/prism.js"></script>
 <script src="/js/module/parser.js"></script>
+=======
+<link rel="stylesheet" href="/css/article/show.css" />
+{% endblock %}
+
+{% block js %}
+>>>>>>> go-tech-blog/main
 <script src="/js/article/show.js"></script>
 {% endblock %}
 
 {% block title %}
+<<<<<<< HEAD
 {{ Article.Title }} | {{ block.Super }}
 {% endblock %}
 
@@ -34,4 +42,13 @@
   </div>
   <div class="article-footer"></div>
 </div>
+=======
+詳細 | {{ block.Super }}
+{% endblock %}
+
+{% block content %}
+<p>{{ Message }}</p>
+<p>{{ Now }}</p>
+<p>{{ ID }}</p>
+>>>>>>> go-tech-blog/main
 {% endblock %}

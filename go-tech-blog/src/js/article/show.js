@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 'use strict';
 
 // DOM Tree の構築が完了したら処理を開始します。
@@ -9,3 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
   // Remarkable で HTML に変換して要素に追加します。
   elm.innerHTML = md.render(elm.dataset.markdown);
 });
+=======
+console.log('this is article/show.js');
+>>>>>>> go-tech-blog/main

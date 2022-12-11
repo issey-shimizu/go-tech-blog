@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 'use strict';
 
 // DOM Tree の構築が完了したら処理を開始します。
@@ -116,3 +117,6 @@ document.addEventListener('DOMContentLoaded', () => {
       .catch(err => console.error(err));
   });
 });
+=======
+console.log('this is article/index.js');
+>>>>>>> go-tech-blog/main
